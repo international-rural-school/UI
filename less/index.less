@@ -4,10 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
 
-// @import "./less/fontawesome";
-// @import "./less/solid";
-// @import "./less/brands";
-
 * {
   box-sizing: border-box;
 }
@@ -74,10 +70,10 @@ body {
       width: 20px;
     }
   }
-}
-
-img {
-  display: block;
+  img {
+    display: flex;
+    justify-content: right;
+  }
 }
 
 .main-content {
@@ -90,21 +86,24 @@ top-content {
 
 footer {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  align-content: space-between;
-  text-align: center;
-  margin: 5px;
-}
+  justify-content: center;
+  p {
+    display: flex;
+    text-align: center;
+    align-content: center;
+  }
+  h6 {
+    margin: 4px;
 
-h6 {
-  margin: 4px;
+    flex-direction: center;
+  }
 
-  flex-direction: center;
-}
-
-span {
-  display: inline-block;
-  width: 30%;
-  align-content: space-around;
-  align-self: center;
+  span {
+    display: inline-block;
+    width: 100%;
+    align-content: space-around;
+    align-self: center;
+  }
 }
