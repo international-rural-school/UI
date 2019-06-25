@@ -19,7 +19,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: lightgrey;
   font-family: "PT Sans", sans-serif;
   width: 60%;
   margin: 0 auto;
@@ -69,18 +69,25 @@ body {
   display: flex;
   align-items: center;
   border: 2px solid yellow;
-  margin-top: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   justify-content: space-around;
+  h1 {
+    font-size: 50px;
+  }
   iframe {
-    width: 30%;
-    height: 50%;
+    width: 50%;
   }
   .intro-text {
     display: flex;
     flex-direction: column;
     border: 2px solid red;
+    text-align: center;
+    width: 40%;
+    padding-bottom: 30px;
     button {
-      width: 200px;
+      width: 150px;
+      margin: 0 auto;
     }
   }
   img {
@@ -92,7 +99,10 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
-  align-text: center;
+  text-align: center;
+  .top-content {
+    display:flex;
+  }
   .icons {
       height: 100px;
   }
