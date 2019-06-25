@@ -8,12 +8,12 @@
 // @import "./less/solid";
 // @import "./less/brands";
 
-
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -28,28 +28,28 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      display: flex;
+      width: 90%;
+      flex-direction: row;
+      justify-content: space-evenly;
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  
-}
-
-a {
-  display: flex;
-  justify-content: space-around;
-  text-decoration: none;
-  color: green;
-
+      a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: green;
+      }
+    }
+    img {
+      display: flex;
+      max-width: 8%;
+    }
+  }
 }
 
 #bigPic {
@@ -70,11 +70,10 @@ a {
   .intro-text {
     display: flex;
     flex-direction: column;
+    button {
+      width: 20px;
+    }
   }
-}
-
-button {
-  width: 20px;
 }
 
 img {
@@ -99,7 +98,7 @@ footer {
 
 h6 {
   margin: 4px;
-  
+
   flex-direction: center;
 }
 
@@ -108,5 +107,4 @@ span {
   width: 30%;
   align-content: space-around;
   align-self: center;
-
 }
