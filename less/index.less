@@ -1,8 +1,12 @@
 @import "../Footer/footer.less";
 @import "../less/mixins.less";
 @import "../less/variables.less";
-@import "../css/";
+
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
+
+// @import "./less/fontawesome";
+// @import "./less/solid";
+// @import "./less/brands";
 
 
 * {
@@ -16,28 +20,57 @@ html, body {
 
 body {
   display: flex;
+  flex-direction: column;
   background-color: grey;
-  //color: @lambda-times-color-primary;
   font-family: "PT Sans", sans-serif;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
-  display: inline-flex;
-}
-.logo {
   display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
 }
 
-.intro .intro-text{
+a {
   display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: green;
+
+}
+
+#bigPic {
+  display: flex;
+  max-width: 30%;
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  max-width: 8%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 button {
@@ -54,4 +87,26 @@ img {
 
 top-content {
   display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+  margin: 5px;
+}
+
+h6 {
+  margin: 4px;
+  
+  flex-direction: center;
+}
+
+span {
+  display: inline-block;
+  width: 30%;
+  align-content: space-around;
+  align-self: center;
+
 }

@@ -7,9 +7,9 @@ class Case {
 
     this.expandButton = this.domElement.querySelector('.expandButton'); 
 
-    this.expandButton.textContent = 'expand'
+    this.expandButton.textContent = 'expand';
 
-    this.expandButton.addEventListener('click', () => { this.expandCase(); })
+    this.expandButton.addEventListener('click', () => { this.expandCase(); });
 
     this.domElement.addEventListener('transitionend', () => {this.domElement.style.height = ""; }) 
     }    
@@ -24,6 +24,7 @@ class Case {
     } 
 } 
 
-const cases = document.querySelectorAll('.case'); articles.forEach(case => new Case(case))
-
-const articles = document.querySelectorAll('.article'); articles.forEach(article => new Article(article))
+const cases = document.querySelectorAll('.case'); 
+//cases.forEach(case => new Case(case));
+cases.forEach(example => {new Case(example)});
+// const articles = document.querySelectorAll('.article'); articles.forEach(article => new Article(article))
