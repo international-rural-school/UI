@@ -131,6 +131,9 @@ body {
 .main-content h1 {
   font-size: 40px;
 }
+.main-content .first-step {
+  border: 3px solid blue;
+}
 .main-content .top-content {
   display: flex;
 }
@@ -142,18 +145,26 @@ top-content {
 }
 footer {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: center;
+}
+footer p {
   text-align: center;
-  margin: 5px;
 }
-h6 {
+footer h6 {
   margin: 4px;
-  flex-direction: center;
+  text-align: center;
 }
-span {
-  display: inline-block;
-  width: 30%;
+footer .wsite-social {
+  display: flex;
+  margin: 15px;
   align-content: space-around;
   align-self: center;
+  align-items: center;
+}
+footer .wsite-social a {
+  padding: 10px;
+  font-size: 1.6rem;
+  color: black;
 }

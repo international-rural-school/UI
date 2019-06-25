@@ -114,8 +114,11 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  h1{
+  h1 {
     font-size:40px;
+  }
+  .first-step {
+    border: 3px solid blue;
   }
   .top-content {
     display:flex;
@@ -125,27 +128,34 @@ body {
   }
 }
 
+
+
 top-content {
   display: flex;
 }
 
 footer {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  align-content: space-between;
-  text-align: center;
-  margin: 5px;
-}
-
-h6 {
-  margin: 4px;
-
-  flex-direction: center;
-}
-
-span {
-  display: inline-block;
-  width: 30%;
-  align-content: space-around;
-  align-self: center;
+  justify-content: center;
+  p {
+    text-align: center;
+  }
+  h6 {
+    margin: 4px;
+    text-align: center;
+  }
+  .wsite-social {
+    display: flex;
+    margin: 15px;
+    align-content: space-around;
+    align-self: center;
+    align-items: center;
+    a {
+      padding: 10px;
+      font-size: 1.6rem;
+      color: black;
+    }
+  }
 }
