@@ -1,6 +1,5 @@
-@import "../Footer/footer.less";
-@import "../less/mixins.less";
 @import "../less/variables.less";
+@import "../less/mixins.less";
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
 
@@ -48,17 +47,6 @@ body {
   }
 }
 
-#bigPic {
-  display: flex;
-  max-width: 30%;
-  justify-content: flex-end;
-}
-
-.logo {
-  display: flex;
-  max-width: 8%;
-}
-
 .intro {
   display: flex;
   flex-direction: row;
@@ -78,10 +66,10 @@ body {
 
 .main-content {
   display: flex;
-}
 
-top-content {
-  display: flex;
+  .top-content {
+    display: flex;
+  }
 }
 
 footer {
@@ -89,21 +77,27 @@ footer {
   width: 100%;
   flex-direction: column;
   justify-content: center;
+
   p {
-    display: flex;
     text-align: center;
-    align-content: center;
   }
+
   h6 {
     margin: 4px;
-
-    flex-direction: center;
+    text-align: center;
   }
 
-  span {
-    display: inline-block;
-    width: 100%;
+  .wsite-social {
+    display: flex;
+    margin: 15px;
     align-content: space-around;
     align-self: center;
+    align-items: center;
+
+    a {
+      padding: 10px;
+      font-size: 1.6rem;
+      color: black;
+    }
   }
 }
