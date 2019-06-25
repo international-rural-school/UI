@@ -1,51 +1,79 @@
 @import "../Footer/footer.less";
 @import "../less/mixins.less";
 @import "../less/variables.less";
-@import "../css/";
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
 
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   background-color: grey;
-  //color: @lambda-times-color-primary;
   font-family: "PT Sans", sans-serif;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      display: flex;
+      width: 90%;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: green;
+      }
+    }
+    img {
+      display: flex;
+      max-width: 8%;
+    }
+  }
 }
 
-header {
+#bigPic {
   display: flex;
+  max-width: 30%;
+  justify-content: flex-end;
 }
 
-nav {
-  display: inline-flex;
-}
 .logo {
   display: flex;
+  max-width: 8%;
 }
 
-.intro .intro-text{
+.intro {
   display: flex;
-}
-
-button {
-  width: 20px;
-}
-
-img {
-  display: block;
+  flex-direction: row;
+  align-content: space-between;
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    button {
+      width: 20px;
+    }
+  }
+  img {
+    display: flex;
+    justify-content: right;
+  }
 }
 
 .main-content {
@@ -54,4 +82,28 @@ img {
 
 top-content {
   display: flex;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    display: flex;
+    text-align: center;
+    align-content: center;
+  }
+  h6 {
+    margin: 4px;
+
+    flex-direction: center;
+  }
+
+  span {
+    display: inline-block;
+    width: 100%;
+    align-content: space-around;
+    align-self: center;
+  }
 }

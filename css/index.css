@@ -36,33 +36,84 @@ body {
 }
 body {
   display: flex;
+  flex-direction: column;
   background-color: grey;
   font-family: "PT Sans", sans-serif;
 }
 .container {
   display: flex;
+  flex-direction: column;
 }
-header {
+.container header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav {
-  display: inline-flex;
+.container header nav {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container header nav a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: green;
+}
+.container header img {
+  display: flex;
+  max-width: 8%;
+}
+#bigPic {
+  display: flex;
+  max-width: 30%;
+  justify-content: flex-end;
 }
 .logo {
   display: flex;
+  max-width: 8%;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
 }
 .intro .intro-text {
   display: flex;
+  flex-direction: column;
 }
-button {
+.intro .intro-text button {
   width: 20px;
 }
-img {
-  display: block;
+.intro img {
+  display: flex;
+  justify-content: right;
 }
 .main-content {
   display: flex;
 }
 top-content {
   display: flex;
+}
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+footer p {
+  display: flex;
+  text-align: center;
+  align-content: center;
+}
+footer h6 {
+  margin: 4px;
+  flex-direction: center;
+}
+footer span {
+  display: inline-block;
+  width: 100%;
+  align-content: space-around;
+  align-self: center;
 }
