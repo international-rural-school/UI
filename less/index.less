@@ -21,6 +21,9 @@ body {
   flex-direction: column;
   background-color: grey;
   font-family: "PT Sans", sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid red;
 }
 
 .container {
@@ -53,7 +56,8 @@ body {
 #bigPic {
   display: flex;
   max-width: 30%;
-  justify-content: flex-end;
+  align-self: flex-end;
+  opacity: .5;
 }
 
 .logo {
@@ -63,13 +67,20 @@ body {
 
 .intro {
   display: flex;
-  flex-direction: row;
-  align-content: space-between;
+  align-items: center;
+  border: 2px solid yellow;
+  margin-top: 10px;
+  justify-content: space-around;
+  iframe {
+    width: 30%;
+    height: 50%;
+  }
   .intro-text {
     display: flex;
     flex-direction: column;
+    border: 2px solid red;
     button {
-      width: 20px;
+      width: 200px;
     }
   }
   img {
@@ -80,6 +91,11 @@ body {
 
 .main-content {
   display: flex;
+  flex-direction: column;
+  align-text: center;
+  .icons {
+      height: 100px;
+  }
 }
 
 top-content {
