@@ -228,10 +228,10 @@ header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center;
   max-width: 400px;
   padding-bottom: 30px;
   color: #ffffff;
+  text-align: center;
 }
 .intro .top-container .intro-text h1 {
   text-align: center;
