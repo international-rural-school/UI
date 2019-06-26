@@ -1,6 +1,110 @@
-footer {
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
   display: flex;
-  border: 3px solid red;
+  justify-content: center;
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  width: 10rem;
+  margin: 1rem 2rem 1rem 1.2rem;
+  background-color: #fa8562;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media 700px {
+  input[type="submit"] {
+    padding: 1rem 1rem;
+  }
+}
+@media 700px {
+  input[type="submit"] {
+    padding: 1rem 1rem;
+  }
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #b9e77d;
+}
+/* Add a background color and some padding around the form */
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 95%;
+}
+@media 700px {
+}
+@media 500px {
+  main form {
+    flex-direction: row;
+  }
+}
+main form h1 {
+  display: flex;
+  justify-content: center;
+}
+main form .info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+main form .info #fname,
+main form .info #email {
+  width: 45%;
+}
+@media 700px {
+  main form .info {
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+  main form .info #fname,
+  main form .info #email {
+    width: 45%;
+  }
+}
+@media 500px {
+  main form .info {
+    flex-direction: column;
+  }
+  main form .info #fname,
+  main form .info #email {
+    width: 100%;
+  }
 }
 @pgbg =#fff;
 @pgfc =#000;
@@ -45,7 +149,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: #fff;
   font-family: "PT Sans", sans-serif;
 }
 .container {
@@ -73,15 +177,6 @@ body {
   display: flex;
   max-width: 8%;
 }
-#bigPic {
-  display: flex;
-  max-width: 30%;
-  justify-content: flex-end;
-}
-.logo {
-  display: flex;
-  max-width: 8%;
-}
 .intro {
   display: flex;
   flex-direction: row;
@@ -101,7 +196,11 @@ body {
 .main-content {
   display: flex;
 }
+<<<<<<< HEAD
 .top-content {
+=======
+.main-content .top-content {
+>>>>>>> 7985ac13dc83aa7dbd5dd0c1f940fdaec59b7987
   display: flex;
 }
 footer {
@@ -109,6 +208,7 @@ footer {
   width: 100%;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
 }
 footer p {
   text-align: center;
