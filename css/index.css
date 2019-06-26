@@ -43,6 +43,12 @@ body {
   margin: 0 auto;
   border: 2px solid red;
 }
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -127,9 +133,13 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-around;
 }
 .main-content h1 {
   font-size: 40px;
+}
+.main-content h4 {
+  font-size: 30px;
 }
 .main-content .first-step {
   border: 3px solid blue;

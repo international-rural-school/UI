@@ -26,6 +26,12 @@ body {
   border: 2px solid red;
 }
 
+header {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  background: white;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -114,8 +120,12 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-around;
   h1 {
     font-size:40px;
+  }
+  h4 {
+    font-size:30px;
   }
   .first-step {
     border: 3px solid blue;
