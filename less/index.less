@@ -1,6 +1,6 @@
 @import "../less/variables.less";
 @import "../less/mixins.less";
-
+@import "../less/contact.less";
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
 
 * {
@@ -16,7 +16,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: @pgbg;
   font-family: "PT Sans", sans-serif;
 }
 
@@ -77,6 +77,7 @@ footer {
   width: 100%;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
 
   p {
     text-align: center;
