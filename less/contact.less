@@ -47,7 +47,7 @@ main {
   width: 100%;
   justify-content: center;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: @pgbg;
   padding: 30px;
 
   form {
@@ -68,20 +68,32 @@ main {
       display: flex;
       justify-content: center;
     }
-    info {
+    .info {
       display: flex;
+      flex-wrap: wrap;
       width: 100%;
-      justify-content: center;
+      justify-content: space-between;
       align-content: space-between;
 
+      #fname,
+      #email {
+        width: 45%;
+      }
       @media @tablet {
         flex-direction: column;
         padding: 1rem 1rem;
-        input: nth-last-child(-1);
+        #fname,
+        #email {
+          width: 45%;
+        }
       }
 
       @media @phone {
         flex-direction: column;
+        #fname,
+        #email {
+          width: 100%;
+        }
       }
     }
   }

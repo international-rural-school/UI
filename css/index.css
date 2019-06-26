@@ -55,7 +55,7 @@ main {
   width: 100%;
   justify-content: center;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #fff;
   padding: 30px;
 }
 main form {
@@ -76,22 +76,34 @@ main form h1 {
   display: flex;
   justify-content: center;
 }
-main form info {
+main form .info {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-content: space-between;
 }
+main form .info #fname,
+main form .info #email {
+  width: 45%;
+}
 @media 700px {
-  main form info {
+  main form .info {
     flex-direction: column;
     padding: 1rem 1rem;
-    input: nth-last-child(-1);
+  }
+  main form .info #fname,
+  main form .info #email {
+    width: 45%;
   }
 }
 @media 500px {
-  main form info {
+  main form .info {
     flex-direction: column;
+  }
+  main form .info #fname,
+  main form .info #email {
+    width: 100%;
   }
 }
 @font-face {
