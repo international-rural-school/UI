@@ -75,9 +75,26 @@ body {
 footer {
   display: flex;
   width: 100%;
+  border: 2px solid red;
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
+
+  @media (max-width: @tablet) {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    #fname,
+    #email {
+      width: 85%;
+    }
+  }
+  @media (max-width: @phone) {
+    flex-direction: column;
+    #fname,
+    #email {
+      width: 100%;
+    }
+  }
 
   p {
     text-align: center;
@@ -86,6 +103,21 @@ footer {
   h6 {
     margin: 4px;
     text-align: center;
+    @media (max-width: @tablet) {
+      flex-direction: column;
+      padding: 1rem 1rem;
+      #fname,
+      #email {
+        width: 85%;
+      }
+    }
+    @media (max-width: @phone) {
+      flex-direction: column;
+      #fname,
+      #email {
+        width: 100%;
+      }
+    }
   }
 
   .wsite-social {
@@ -94,6 +126,15 @@ footer {
     align-content: space-around;
     align-self: center;
     align-items: center;
+    @media (max-width: @tablet) {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 1rem;
+    }
+    @media (max-width: @phone) {
+      justify-content: center;
+      flex-direction: column;
+    }
 
     a {
       padding: 10px;
