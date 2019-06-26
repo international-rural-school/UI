@@ -2,6 +2,14 @@ footer {
   display: flex;
   border: 3px solid red;
 }
+@pgbg =#fff;
+@pgfc =#000;
+@hdrfc =#504646;
+@bdrclr =red;
+@ftrfc =rgba(255, 208, 0, 0.822);
+@jc =center;
+@ai =center;
+@dir =row;
 @font-face {
   font-family: 'PT Sans';
   font-style: italic;
@@ -93,7 +101,7 @@ body {
 .main-content {
   display: flex;
 }
-top-content {
+.top-content {
   display: flex;
 }
 footer {
@@ -103,17 +111,21 @@ footer {
   justify-content: center;
 }
 footer p {
-  display: flex;
   text-align: center;
-  align-content: center;
 }
 footer h6 {
   margin: 4px;
-  flex-direction: center;
+  text-align: center;
 }
-footer span {
-  display: inline-block;
-  width: 100%;
+footer .wsite-social {
+  display: flex;
+  margin: 15px;
   align-content: space-around;
   align-self: center;
+  align-items: center;
+}
+footer .wsite-social a {
+  padding: 10px;
+  font-size: 1.6rem;
+  color: black;
 }

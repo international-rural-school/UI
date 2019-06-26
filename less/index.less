@@ -1,109 +1,121 @@
 @import "../Footer/footer.less";
-@import "../less/mixins.less";
 @import "../less/variables.less";
+@import "../less/mixins.less";
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  background-color: grey;
-  font-family: "PT Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    font-family: "PT Sans", sans-serif;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    nav {
-      display: flex;
-      width: 90%;
-      flex-direction: row;
-      justify-content: space-evenly;
+    flex-direction: column;
 
-      a {
+    header {
         display: flex;
-        justify-content: space-around;
-        text-decoration: none;
-        color: green;
-      }
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            display: flex;
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            a {
+                display: flex;
+                justify-content: space-around;
+                text-decoration: none;
+                color: green;
+            }
+        }
+
+        img {
+            display: flex;
+            max-width: 8%;
+        }
     }
-    img {
-      display: flex;
-      max-width: 8%;
-    }
-  }
 }
 
 #bigPic {
-  display: flex;
-  max-width: 30%;
-  justify-content: flex-end;
+    display: flex;
+    max-width: 30%;
+    justify-content: flex-end;
 }
 
 .logo {
-  display: flex;
-  max-width: 8%;
+    display: flex;
+    max-width: 8%;
 }
 
 .intro {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-  .intro-text {
     display: flex;
-    flex-direction: column;
-    button {
-      width: 20px;
+    flex-direction: row;
+    align-content: space-between;
+
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            width: 20px;
+        }
     }
-  }
-  img {
-    display: flex;
-    justify-content: right;
-  }
+
+    img {
+        display: flex;
+        justify-content: right;
+    }
 }
 
 .main-content {
-  display: flex;
+    display: flex;
 }
 
-top-content {
-  display: flex;
+.top-content {
+    display: flex;
 }
 
 footer {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  p {
     display: flex;
-    text-align: center;
-    align-content: center;
-  }
-  h6 {
-    margin: 4px;
-
-    flex-direction: center;
-  }
-
-  span {
-    display: inline-block;
     width: 100%;
-    align-content: space-around;
-    align-self: center;
-  }
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        text-align: center;
+    }
+
+    h6 {
+        margin: 4px;
+        text-align: center;
+    }
+
+    .wsite-social {
+        display: flex;
+        margin: 15px;
+        align-content: space-around;
+        align-self: center;
+        align-items: center;
+
+        a {
+            padding: 10px;
+            font-size: 1.6rem;
+            color: black;
+        }
+    }
 }
