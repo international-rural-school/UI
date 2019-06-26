@@ -2,26 +2,6 @@ footer {
   display: flex;
   border: 3px solid red;
 }
-.main {
-  display: flex;
-  width: 100%;
-  max-height: 10rem;
-}
-.main img {
-  border-bottom-width: 3px;
-  border-bottom-color: red;
-}
-.main .headlines {
-  display: flex;
-  flex-direction: column;
-}
-.main ul {
-  display: flex;
-  list-style: square inside;
-}
-.main ul h4 {
-  margin: 1rem;
-}
 @font-face {
   font-family: 'PT Sans';
   font-style: italic;
