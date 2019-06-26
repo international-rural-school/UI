@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.quote {
+  background-color: orange;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: "PT Sans", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+  -webkit-box-shadow: 2px 2px 2px 2px #e8e8e8;
+  box-shadow: 2px 2px 2px 2px #e8e8e8;
+}
+header nav {
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+header nav a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: green;
+}
+header img {
+  max-width: 90px;
+  margin: 5px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 70vh;
+  justify-content: space-around;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/ghana.png');
+}
+@media (max-width: 800px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+.intro h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.intro iframe {
+  width: 400px;
+  height: 315px;
+}
+.intro .top-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.intro .top-container .intro-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 400px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+.intro .top-container .intro-text h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.intro .top-container .intro-text p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .intro .top-container .intro-text {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .intro .top-container .intro-text {
+    width: 100%;
+  }
+}
+.intro .top-container .intro-text .schools {
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.intro .top-container .intro-text div {
+  background: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  margin: 0 auto;
+  font-size: 16px;
+  width: 200px;
+}
+.intro .top-container img {
+  display: flex;
+  justify-content: right;
+}
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 1000px;
+}
+.container-wrapper .container {
+  display: flex;
+  flex-direction: column;
+}
+.container-wrapper .logo {
+  display: flex;
+  width: 100%;
+}
+.container-wrapper .main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+.container-wrapper .main-content h1 {
+  font-size: 40px;
+}
+.container-wrapper .main-content h4 {
+  font-size: 30px;
+}
+.container-wrapper .main-content .top-content {
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .container-wrapper .main-content .top-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.container-wrapper .main-content .top-content .text-content {
+  width: 30%;
+  margin: 10px;
+  padding-top: 30px;
+}
+@media (max-width: 800px) {
+  .container-wrapper .main-content .top-content .text-content {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+  }
+}
+.container-wrapper .main-content .icons {
+  height: 100px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+footer .social {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+/* Phone */
+/* Tablet */

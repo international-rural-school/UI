@@ -1,0 +1,396 @@
+@import "./reset.less";
+@import "./varibles-style.less";
+@import "./footer-style.less";
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: "PT Sans", sans-serif;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+    -webkit-box-shadow: 2px 2px 2px 2px #e8e8e8;
+    box-shadow: 2px 2px 2px 2px #e8e8e8;
+
+
+    nav {
+        display: flex;
+        width: 90%;
+        max-width: 900px;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        a {
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            color: green;
+        }
+    }
+
+    img {
+        max-width: 90px;
+        margin: 5px;
+
+    }
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 70vh;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url('../../assets/ghana.png');
+
+    @media @tablet {
+        flex-direction: column;
+    }
+
+    @media @phone {}
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    iframe {
+        width: 400px;
+        height: 315px;
+    }
+
+    .top-container {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .intro-text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            max-width: 400px;
+            padding-bottom: 30px;
+            color: #ffffff;
+
+
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+
+            @media @tablet {
+                width: 70%;
+                margin-bottom: 30px;
+            }
+
+            @media @phone {
+                width: 100%;
+            }
+
+            .schools {
+                align-items: center;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            div {
+                background: #4caf50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: flex;
+                margin: 0 auto;
+                font-size: 16px;
+                width: 200px;
+            }
+        }
+
+        img {
+            display: flex;
+            justify-content: right;
+        }
+    }
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans", sans-serif;
+    margin: 0 auto;
+    background-color: white;
+    max-width: 1000px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+    }
+
+
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+
+        .top-content {
+            display: flex;
+            text-align: center;
+            align-items: flex-start;
+            justify-content: space-around;
+
+            @media @tablet {
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            .text-content {
+                width: 30%;
+                margin: 10px;
+                padding-top: 30px;
+                @media @tablet {
+                    width: 100%;
+                    max-width: 350px;
+                    margin: 20px auto;
+                }
+            }
+        }
+
+
+        .icons {
+            height: 100px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .social {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+// footer {
+//   border: none;
+//   display: grid;
+//   grid-template-columns: repeat(5,1fr);
+//   grid-template-rows: repeat (2,1fr);
+//   width: 100%;
+//   .quote {
+//     grid-row: 1/2;
+//     background: red;
+//   }
+//   p {
+//     text-align: center;
+//   }
+//   h6 {
+//     margin: 4px;
+//     text-align: center;
+//   }
+
+// .fab {
+//     display: flex;
+//     grid-row:2/2;
+//     width: 100%;
+//     border: 2px solid orange;
+//     margin: 15px;
+//   }
+// }
+
+/* Phone */
+// @media @phone {
+//     .container {
+//         width: 100%;
+//     }
+
+//     header {
+//         flex-wrap: wrap;
+//     }
+
+//     header nav a {
+//         display: grid;
+//         grid-template-columns: repeat(6, 1fr);
+//         padding: 0 30px;
+//     }
+
+//     header .logo {
+//         order: -1;
+//         display: block;
+//         margin: 30px auto 0;
+//     }
+
+//     iframe {
+//         width: 20000rem;
+//     }
+
+//     .intro {
+//         justify-content: center;
+//         flex-direction: column;
+
+//     }
+
+//     .intro .intro-text {
+//         width: 100%;
+//     }
+
+
+//     // .intro .intro-text div {
+//     //   margin: 0;
+//     //   font-size: 0.5rem;
+//     //   text-align: center;
+//     //   width: 3rem;
+//     // }
+
+//     // .schools {
+//     //   font-size: 1rem;
+//     // }
+
+//     .intro img {
+//         display: none;
+//     }
+
+//     .main-content .top-content {
+//         display: flex;
+//         flex-direction: column;
+//         background: pink;
+//     }
+
+//     .main-content {
+//         width: 80%;
+//     }
+
+//     .main-content {
+//         margin: 0 auto;
+//     }
+
+//     .text-content {
+//         margin: 0 10px;
+//     }
+// }
+
+/* Tablet */
+// @media @tablet {
+//     .container {
+//         width: 100%;
+//     }
+
+//     header {
+//         flex-wrap: wrap;
+//     }
+
+//     header nav {
+//         width: 768px;
+//         padding: 0 30px;
+//     }
+
+//     header .logo {
+//         order: -1;
+//         display: block;
+//         margin: 30px auto 0;
+//     }
+
+//     iframe {
+//         width: 20000rem;
+//     }
+
+//     .intro {
+//         justify-content: center;
+//         flex-direction: column;
+
+//     }
+
+//     .intro .intro-text {
+//         width: 100%;
+//     }
+
+
+//     // .intro .intro-text div {
+//     //   margin: 0;
+//     //   font-size: 0.5rem;
+//     //   text-align: center;
+//     //   width: 3rem;
+//     // }
+
+//     // .schools {
+//     //   font-size: 1rem;
+//     // }
+
+//     .intro img {
+//         display: none;
+//     }
+
+//     .main-content .top-content {
+//         display: flex;
+//         flex-direction: column;
+//         background: pink;
+//     }
+
+//     .main-content {
+//         width: 80%;
+//     }
+
+//     .main-content {
+//         margin: 0 auto;
+//     }
+
+//     .text-content {
+//         margin: 0 10px;
+//     }
+// }
