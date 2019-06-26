@@ -1,0 +1,156 @@
+footer {
+  display: flex;
+  border: 3px solid red;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  font-family: "PT Sans", sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header nav {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container header nav a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: green;
+}
+.container header img {
+  display: flex;
+  max-width: 8%;
+}
+#bigPic {
+  display: flex;
+  max-width: 30%;
+  align-self: flex-end;
+  opacity: 0.5;
+}
+.logo {
+  display: flex;
+  max-width: 8%;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  border: 2px solid yellow;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: space-around;
+}
+.intro h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.intro iframe {
+  width: 50%;
+}
+.intro .intro-text {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  text-align: center;
+  width: 40%;
+  padding-bottom: 30px;
+}
+.intro .intro-text .schools {
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.intro .intro-text button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  margin: 0 auto;
+  font-size: 16px;
+  width: 200px;
+}
+.intro img {
+  display: flex;
+  justify-content: right;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main-content .top-content {
+  display: flex;
+}
+.main-content .icons {
+  height: 100px;
+}
+top-content {
+  display: flex;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+  margin: 5px;
+}
+h6 {
+  margin: 4px;
+  flex-direction: center;
+}
+span {
+  display: inline-block;
+  width: 30%;
+  align-content: space-around;
+  align-self: center;
+}
