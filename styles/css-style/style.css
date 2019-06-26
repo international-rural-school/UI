@@ -228,6 +228,7 @@ header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
   max-width: 400px;
   padding-bottom: 30px;
   color: #ffffff;
@@ -238,6 +239,7 @@ header img {
 }
 .intro .top-container .intro-text p {
   margin-bottom: 20px;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .intro .top-container .intro-text {
@@ -283,12 +285,6 @@ header img {
   display: flex;
   flex-direction: column;
 }
-.container-wrapper #bigPic {
-  display: flex;
-  max-width: 30%;
-  align-self: flex-end;
-  opacity: 0.5;
-}
 .container-wrapper .logo {
   display: flex;
   width: 100%;
@@ -320,6 +316,7 @@ header img {
 .container-wrapper .main-content .top-content .text-content {
   width: 30%;
   margin: 10px;
+  padding-top: 30px;
 }
 @media (max-width: 800px) {
   .container-wrapper .main-content .top-content .text-content {
