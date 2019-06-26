@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/css/index.css" />
     <script src="https://kit.fontawesome.com/966cb2f3fc.js"></script>
     <script src="./Case/Case.js" defer></script>
   </head>
@@ -12,7 +12,7 @@
       <header>
         <nav>
           <a href="https://www.ghanamakeadifference.org/">Home</a>
-          <a href="/aboutus.html">About</a>
+          <a href="/about/about.html">About</a>
           <a href="https://www.ghanamakeadifference.org/our-work.html"
             >Vision</a
           >
@@ -34,39 +34,50 @@
             Make<br />
             A Difference
           </h1>
-          <p>a few sentences about the cause.</p>
-          <button>Get Started</button>
+          <p class= "schools">Schools in developing worlds need your help. Our app allows school administrators in the developing world to track and broadcast the needs of their school to board members in the US.</p>
+          <div class="btn">Make A Difference</div>
         </div>
-        <img src="/assets/ghana.png" alt="Image of Ghana promo materials." />
+        <iframe 
+          src="https://www.youtube.com/embed/ptjaSNs0VP8"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </section>
 
+      </section> -->
+
       <section class="main-content">
-        <h1>How this works:</h1>
+        <h1>How It Works</h1>
         <div class="top-content cases">
           <div class="text-content steps">
-            <img src="/assets/signup.png" alt="Sign Up Icon" />
+            <div class="first-step">
+            <img class= "icons" src="/assets/signup.png" alt="Sign Up Icon" />
             <h4>Sign Up</h4>
             <p>
-              Aliquam elementum magna eros, ac posuere elvit tempus et.
-              Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-              ornare nisl. Nullam convallis augue justo, at imperdiet metus
-              scelerisque quis.
+            If you are a board member, school admin, or just somebody that wants to help, click our login button to sign up and get started. 
             </p>
+          </div>
           </div>
 
           <div class="text-content steps">
-            <img src="/assets/find.png" alt="Magnifying Glass Icon" />
+            <div class= "second-step">
+            <img class= "icons" src="/assets/find.png" alt="Magnifying Glass Icon" />
             <h4>Find your school</h4>
             <p>
-              Aliquam elementum magna eros, ac posuere elvit tempus et.
-              Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-              ornare nisl. Nullam convallis augue justo, at imperdiet metus
-              scelerisque quis.
+                School Admin can login and create, read, update and delete 
+                information on the condition of the school including general 
+                issues and the condition of equipment devices in the school 
+                (TVs, tablets, chromebooks, servers, routers, HDMI cables). 
+                A board member can log in and mark the action as done, scheduled, 
+                or ignored, and comment with more information.
             </p>
+          </div>
           </div>
 
           <div class="text-content steps">
-            <img src="/assets/fix.png" alt="Fix Icon" />
+              <div class= "third-step">
+            <img class= "icons" src="/assets/fix.png" alt="Fix Icon" />
             <h4>Fix</h4>
             <p>
               Aliquam elementum magna eros, ac posuere elvit tempus et.
@@ -75,53 +86,45 @@
               scelerisque quis.
             </p>
           </div>
+          </div>
         </div>
       </section>
     </div>
-
     <footer>
-      <p>
-        "I can do things you cannot, you can do things I cannot; ​together we
-        can do great things."
-      </p>
-      <h6>-Mother Teresa</h6>
-      <div class="wsite-social">
-        <a
-          class="first-child wsite-social-item wsite-social-instagram"
-          href="https://www.instagram.com/ghana_make_a_difference/"
-          target="_blank"
-          alt="Instagram"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a
-          class="wsite-social-item wsite-social-facebook"
-          href="https://www.facebook.com/GhanaMakeADifference"
-          target="_blank"
-          alt="Facebook"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a
-          class="wsite-social-item wsite-social-twitter"
-          href="https://www.twitter.com/ghanamakeadiff"
-          target="_blank"
-          alt="Twitter"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a
-          class="wsite-social-item wsite-social-youtube"
-          href="https://www.youtube.com/channel/UConAl3-DxcGU9B&xFyh-Bmw"
-          target="_blank"
-          alt="Youtube"
-          ><i class="fab fa-youtube"></i
-        ></a>
-        <a
-          class="last-child wsite-social-item wsite-social-mail"
-          href="mailto:gmad@ghanamakeadifference.org"
-          target="_blank"
-          alt="Mail"
-          ><i class="far fa-envelope"></i
-        ></a>
+      <div class= "quote">
+        <p>
+          "I can do things you cannot, you can do things I cannot; together we
+          can do great things."
+        </p>
+        <h6>-Mother Teresa</h6>
       </div>
-    </footer>
-  </body>
-</html>
+      <div class= "social">
+          <a
+            href="https://www.instagram.com/ghana_make_a_difference/"
+            target="_blank"
+            >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/GhanaMakeADifference"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.twitter.com/ghanamakeadiff"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UConAl3-DxcGU9B&xFyh-Bmw"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="mailto:gmad@ghanamakeadifference.org"
+            target="_blank"
+            ><i class="far fa-envelope fab"></i
+          ></a>
+        </div>
+      </footer>
+    </body>
