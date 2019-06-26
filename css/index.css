@@ -216,7 +216,6 @@ body {
 footer {
   display: flex;
   width: 100%;
-  border: 2px solid red;
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
