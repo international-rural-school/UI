@@ -127,7 +127,7 @@ table {
   border-spacing: 0;
 }
 .quote {
-  background-color: orange;
+  margin-bottom: 100px;
 }
 @font-face {
   font-family: 'PT Sans';
@@ -194,6 +194,7 @@ header img {
 .intro {
   display: flex;
   align-items: center;
+  text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 70vh;
@@ -228,13 +229,15 @@ header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
   max-width: 400px;
   padding-bottom: 30px;
   color: #ffffff;
+  text-align: center;
 }
 .intro .top-container .intro-text h1 {
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 .intro .top-container .intro-text p {
@@ -284,6 +287,8 @@ header img {
 .container-wrapper .container {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .container-wrapper .logo {
   display: flex;
@@ -304,8 +309,6 @@ header img {
 .container-wrapper .main-content .top-content {
   display: flex;
   text-align: center;
-  align-items: flex-start;
-  justify-content: space-around;
 }
 @media (max-width: 800px) {
   .container-wrapper .main-content .top-content {
@@ -335,8 +338,14 @@ footer {
   align-items: center;
 }
 footer .social {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: space-around;
+}
+footer .social i {
+  color: black;
+  font-size: 30px;
 }
 /* Phone */
 /* Tablet */
