@@ -1,32 +1,60 @@
-body,
-.main {
-  display: flex;
-  width: 800px;
-  max-height: 10rem;
-  //background-color: red;
-  background-image: url("/assets/Tech\Classroom.jpg");
-
-  // .bkgndimg {
-  //   border-bottom-width: 3px;
-  //   border-bottom-color: blue;
-  // }
-  .headlines {
+.about-page {
+  .backg-top {
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../../assets/TechClassroom.jpg");
     display: flex;
-    padding: 1rem 1rem 1rem 1rem;
-    flex-direction: column;
-    // border: 3px solid purple;
-    // background-color: blue;
-    h1,
-    h2 {
-      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    .headlines {
+      color: #ffffff;
+      text-align: center;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        font-size: 2.6rem;
+        font-weight: bold;
+      }
+    }
+    @media @tablet {
+      width: 100%;
+    }
+    @media @phone {
     }
   }
-  .points {
+
+  .main-about {
     display: flex;
-    list-style: square inside;
-    // background-color: yellowgreen;
-    h4 {
-      margin: 1rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 1px 1px 1px #d6d6d6;
+    box-shadow: 0 1px 1px 1px #d6d6d6;
+
+    p {
+      font-style: italic;
+      font-size: 2rem;
+    }
+    h3 {
+      align-content: center;
+      padding: 50px;
     }
   }
 }

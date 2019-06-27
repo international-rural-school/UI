@@ -1,26 +1,258 @@
-footer {
+.top-nav {
   display: flex;
-  border: 3px solid red;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+  -webkit-box-shadow: 2px 2px 2px 2px #e8e8e8;
+  box-shadow: 2px 2px 2px 2px #e8e8e8;
 }
-.main {
+.top-nav nav {
   display: flex;
+  width: 90%;
+  max-width: 900px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media 700px {
+  .top-nav nav {
+    width: 100%;
+  }
+}
+@media 500px {
+  .top-nav nav {
+    flex-direction: column;
+  }
+}
+.top-nav nav a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: green;
+}
+.top-nav img {
+  max-width: 90px;
+  margin: 5px;
+}
+@media 700px {
+  .top-nav img {
+    width: 100%;
+  }
+}
+@media 500px {
+  .top-nav img {
+    flex-direction: column;
+  }
+}
+@media 700px {
+  .top-nav {
+    width: 100%;
+  }
+}
+@media 500px {
+  .top-nav {
+    flex-direction: column;
+  }
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  max-height: 10rem;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-.main img {
-  border-bottom-width: 3px;
-  border-bottom-color: red;
+/* Style the submit button  */
+input[type="submit"] {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-self: center;
+  background-color: #fa8562;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.main .headlines {
+@media (max-width: 700px) {
+  input[type="submit"] {
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+  input[type="submit"] #fname,
+  input[type="submit"] #email {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  input[type="submit"] {
+    justify-content: center;
+  }
+  input[type="submit"] #fname,
+  input[type="submit"] #email {
+    width: 100%;
+  }
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #9ac068;
+}
+/* Add a background color and some padding around the form */
+main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px;
+}
+main form {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  width: 90%;
+  max-width: 800px;
 }
-.main ul {
+@media (max-width: 700px) {
+  main form {
+    flex-direction: column;
+    max-width: 90%;
+    padding: 1rem 1rem;
+  }
+  main form #fname,
+  main form #email {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  main form {
+    flex-direction: column;
+  }
+  main form #fname,
+  main form #email {
+    width: 100%;
+  }
+}
+main form h1 {
   display: flex;
-  list-style: square inside;
+  justify-content: center;
 }
-.main ul h4 {
-  margin: 1rem;
+main form .info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+main form .info #fname,
+main form .info #email {
+  width: 48%;
+}
+@media (max-width: 700px) {
+  main form .info {
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+  main form .info #fname,
+  main form .info #email {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  main form .info {
+    flex-direction: column;
+  }
+  main form .info #fname,
+  main form .info #email {
+    width: 100%;
+  }
+}
+.about-page .backg-top {
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/TechClassroom.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-page .backg-top .headlines {
+  color: #ffffff;
+  text-align: center;
+}
+.about-page .backg-top .headlines h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.about-page .backg-top .headlines h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+@media 700px {
+  .about-page .backg-top {
+    width: 100%;
+  }
+}
+.about-page .main-about {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 1px 1px #d6d6d6;
+  box-shadow: 0 1px 1px 1px #d6d6d6;
+}
+.about-page .main-about p {
+  font-style: italic;
+  font-size: 2rem;
+}
+.about-page .main-about h3 {
+  align-content: center;
+  padding: 50px;
+}
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+footer h6 {
+  margin: 20px 5px;
+}
+footer .wsite-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .wsite-social a {
+  margin: 10px;
+  font-size: 1.6rem;
+  color: #000000;
 }
 @font-face {
   font-family: 'PT Sans';
@@ -57,11 +289,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: #fff;
   font-family: "PT Sans", sans-serif;
-  width: 60%;
-  margin: 0 auto;
-  border: 2px solid red;
 }
 header {
   position: -webkit-sticky;
