@@ -163,6 +163,9 @@ body {
   background-color: #fafafa;
   font-family: "PT Sans", sans-serif;
 }
+.whole-pg {
+  width: 100%;
+}
 header {
   display: flex;
   justify-content: center;
