@@ -166,6 +166,10 @@ body {
 .whole-pg {
   width: 100%;
 }
+.whole-pg h1 {
+  font-size: 50px;
+  text-align: center;
+}
 h1 {
   margin-top: 80px;
 }
@@ -388,12 +392,18 @@ footer .social i {
 .peopleContainer img {
   width: 200px;
   height: auto;
-  background: red;
+  background: #CC2D35;
   border-radius: 50%;
+  padding-left: 1rem;
 }
 .aboutContent {
   display: flex;
+  width: 40%;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  justify-content: space-around;
 }
 .aboutContent h1 {
   font-size: 40px;
