@@ -191,6 +191,11 @@ header nav {
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header nav a {
   display: flex;
   justify-content: space-around;
@@ -213,7 +218,7 @@ header img {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/ghana.png');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/ghana.png");
 }
 @media (max-width: 800px) {
   .intro {
@@ -315,6 +320,7 @@ header img {
 }
 .container-wrapper .main-content h4 {
   font-size: 30px;
+  color: white;
 }
 .container-wrapper .main-content .top-content {
   display: flex;
@@ -362,6 +368,7 @@ footer .social i {
 }
 .content h4 {
   font-size: 30px;
+  color: white;
 }
 .content .top-content {
   display: flex;
@@ -386,42 +393,66 @@ footer .social i {
     margin: 20px auto;
   }
 }
-.content .icons {
-  height: 100px;
+.peopleContainer {
+  width: 200px;
+  margin-top: 10px;
 }
 .peopleContainer img {
   width: 200px;
-  height: auto;
-  background: #CC2D35;
+  height: 230px;
+  background: #cc2d35;
   border-radius: 50%;
   padding-left: 1rem;
+  text-align: center;
+}
+.mission {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #D9676E;
+}
+.mission h5 {
+  font-size: 25px;
+  text-align: center;
 }
 .aboutContent {
   display: flex;
-  width: 40%;
+  width: 60%;
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   justify-content: space-around;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/ghana.png");
+}
+.aboutContent p {
+  text-align: center;
+  color: white;
 }
 .aboutContent h1 {
   font-size: 40px;
 }
 .aboutContent h4 {
   font-size: 30px;
+  text-align: center;
+  color: white;
 }
 @media (max-width: 800px) {
   .aboutContent {
     width: 70%;
     margin-bottom: 30px;
-    flex-direction: column;
   }
 }
 @media (max-width: 500px) {
   .aboutContent {
     width: 100%;
-    flex-direction: column;
   }
 }
 /* Phone */
