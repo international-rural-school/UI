@@ -166,6 +166,9 @@ body {
 .whole-pg {
   width: 100%;
 }
+h1 {
+  margin-top: 80px;
+}
 header {
   display: flex;
   justify-content: center;
@@ -349,6 +352,67 @@ footer .social {
 footer .social i {
   color: black;
   font-size: 30px;
+}
+.content h1 {
+  font-size: 40px;
+}
+.content h4 {
+  font-size: 30px;
+}
+.content .top-content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .content .top-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.content .top-content .text-content {
+  width: 30%;
+  margin: 10px;
+  padding-top: 30px;
+}
+@media (max-width: 800px) {
+  .content .top-content .text-content {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+  }
+}
+.content .icons {
+  height: 100px;
+}
+.peopleContainer img {
+  width: 200px;
+  height: auto;
+  background: red;
+  border-radius: 50%;
+}
+.aboutContent {
+  display: flex;
+  margin: 0 auto;
+}
+.aboutContent h1 {
+  font-size: 40px;
+}
+.aboutContent h4 {
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+  .aboutContent {
+    width: 70%;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .aboutContent {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 /* Phone */
 /* Tablet */
