@@ -129,6 +129,77 @@ table {
 .quote {
   margin-bottom: 100px;
 }
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  margin: 50px auto;
+  background-color: white;
+  max-width: 1000px;
+  padding: 30px 10px;
+}
+.about-wrapper .container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.about-wrapper .logo {
+  display: flex;
+  width: 100%;
+}
+.about-wrapper .main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+.about-wrapper .main-content h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.about-wrapper .main-content h4 {
+  font-size: 30px;
+  color: white;
+}
+.about-wrapper .main-content .top-content {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-wrapper .main-content .top-content .text-content {
+  width: 100;
+  margin-bottom: 50px;
+}
+.about-wrapper .main-content .top-content .text-content .first-step,
+.about-wrapper .main-content .top-content .text-content .second-step,
+.about-wrapper .main-content .top-content .text-content .third-step,
+.about-wrapper .main-content .top-content .text-content .quarter-step,
+.about-wrapper .main-content .top-content .text-content .fifth-step {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px 50px;
+}
+.about-wrapper .main-content .top-content .text-content .first-step img,
+.about-wrapper .main-content .top-content .text-content .second-step img,
+.about-wrapper .main-content .top-content .text-content .third-step img,
+.about-wrapper .main-content .top-content .text-content .quarter-step img,
+.about-wrapper .main-content .top-content .text-content .fifth-step img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.about-wrapper .main-content .top-content .text-content h4 {
+  color: black;
+}
+.about-wrapper .main-content .icons {
+  height: 100px;
+}
 @font-face {
   font-family: 'PT Sans';
   font-style: italic;
@@ -160,6 +231,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 50px;
   background-color: #fafafa;
   font-family: "PT Sans", sans-serif;
 }
