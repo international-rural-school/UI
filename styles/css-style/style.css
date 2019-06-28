@@ -163,16 +163,6 @@ body {
   background-color: #fafafa;
   font-family: "PT Sans", sans-serif;
 }
-.whole-pg {
-  width: 100%;
-}
-.whole-pg h1 {
-  font-size: 50px;
-  text-align: center;
-}
-h1 {
-  margin-top: 80px;
-}
 header {
   display: flex;
   justify-content: center;
