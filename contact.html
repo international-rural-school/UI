@@ -7,7 +7,8 @@
 		<script src="https://kit.fontawesome.com/966cb2f3fc.js"></script>
 		<script src="/Case/Case.js" defer></script>
 	</head>
-	<body class="about-page">
+
+	<body class="contant-test">
 		<header class="top-nav">
 			<nav>
 				<a href="index.html">Home</a>
@@ -23,34 +24,26 @@
 				alt="Ghana Make a Difference Logo"
 			/>
 		</header>
+		<main>
+			<form action="action_page.php">
+				<h1><i class="far fa-paper-plane"></i>Contact Us</h1>
 
-		<section class="backg-top">
-			<div class="headlines">
-				<h1>International Rural School</h1>
-				<h2>The Power of the IRS App</h2>
-			</div>
-		</section>
-		<div class="main-about">
-			<div class="points">
-				<ul>
-					<h3>For Board Members, School Administrators and Teachers:</h3>
-					<h4>We give you the power of efficiency!</h4>
-					<li>
-						Ability to track equipment, report and document technical issues; as
-						well as schedule and track repairs and replacements!
-					</li>
-					<li>
-						Inventory equipment and catagorize based on status. See what is
-						available or why it isn't.
-					</li>
-					<li>
-						Each school can track Admin visits and Teacher attendance within an
-						organization.
-					</li>
-					<li>Create reports and collect donations and payments.</li>
-				</ul>
-			</div>
-		</div>
+				<div class="info">
+					<!-- Name and Email -->
+					<input type="text" id="fname" name="name" placeholder="Full Name" />
+					<input type="text" id="email" name="eMail" placeholder="Email" />
+				</div>
+
+				<textarea
+					id="subject"
+					name="subject"
+					placeholder="What can we help you with?"
+					style="height:200px"
+				></textarea>
+
+				<input type="submit" value="Submit" />
+			</form>
+		</main>
 		<footer>
 			<p>
 				"I can do things you cannot, you can do things I cannot; ​together we

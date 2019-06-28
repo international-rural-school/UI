@@ -1,0 +1,144 @@
+@import "../less/variables.less";
+@import "../less/mixins.less";
+@import "../less/contact.less";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: @pgbg;
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      display: flex;
+      width: 90%;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: green;
+      }
+    }
+    img {
+      display: flex;
+      max-width: 8%;
+    }
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    button {
+      width: 20px;
+    }
+  }
+  img {
+    display: flex;
+    justify-content: right;
+  }
+}
+
+.main-content {
+  display: flex;
+
+  .top-content {
+    display: flex;
+  }
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+
+  @media (max-width: @tablet) {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    #fname,
+    #email {
+      width: 85%;
+    }
+  }
+  @media (max-width: @phone) {
+    flex-direction: column;
+    #fname,
+    #email {
+      width: 100%;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h6 {
+    margin: 4px;
+    text-align: center;
+    @media (max-width: @tablet) {
+      flex-direction: column;
+      padding: 1rem 1rem;
+      #fname,
+      #email {
+        width: 85%;
+      }
+    }
+    @media (max-width: @phone) {
+      flex-direction: column;
+      #fname,
+      #email {
+        width: 100%;
+      }
+    }
+  }
+
+  .wsite-social {
+    display: flex;
+    margin: 15px;
+    align-content: space-around;
+    align-self: center;
+    align-items: center;
+    @media (max-width: @tablet) {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 1rem;
+    }
+    @media (max-width: @phone) {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    a {
+      padding: 10px;
+      font-size: 1.6rem;
+      color: black;
+    }
+  }
+}
