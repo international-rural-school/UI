@@ -349,6 +349,13 @@ header img {
   font-size: 16px;
   width: 200px;
 }
+
+.btn-link {
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+}
+
 .intro .top-container img {
   display: flex;
   justify-content: right;
@@ -519,3 +526,7 @@ footer .social i {
 }
 /* Phone */
 /* Tablet */
+
+.btn {
+  opacity: 1;
+}
