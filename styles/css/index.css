@@ -1,3 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+footer h6 {
+    margin: 20px 5px;
+}
+
+footer .wsite-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .wsite-social a {
+    margin: 10px;
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+    -webkit-box-shadow: 2px 2px 2px 2px #e8e8e8;
+    box-shadow: 2px 2px 2px 2px #e8e8e8;
+}
+
+.top-nav nav {
+    display: flex;
+}
+
 .top-nav {
     display: flex;
     justify-content: center;
@@ -90,6 +265,10 @@ textarea {
     /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+
+/* Style the submit button with a specific background color etc */
+
+
 /* Style the submit button  */
 input[type="submit"] {
     display: flex;
@@ -129,7 +308,9 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
+    background-color: #b9e77d;
     background-color: #9ac068;
+
 }
 
 /* Add a background color and some padding around the form */
@@ -138,6 +319,7 @@ main {
     align-content: center;
     justify-content: center;
     border-radius: 5px;
+    background-color: #fafafa;
     background-color: #fff;
     padding: 30px;
 }
@@ -150,6 +332,22 @@ main form {
     width: 90%;
     max-width: 800px;
 }
+
+@media (max-width: 700px) {
+    main form {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 1rem 1rem;
+    }
+
+    main form #fname,
+    main form #email {
+        width: 100%;
+    }
+}
+
+
+
 
 @media (max-width: 700px) {
     main form {
@@ -223,7 +421,7 @@ main form .info #email {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/TechClassroom.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/TechClassroom.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,55 +443,14 @@ main form .info #email {
     font-weight: bold;
 }
 
-@media 700px {
-    .about-page .backg-top {
-        width: 100%;
-    }
-}
-
 .about-page .main-about {
-    display: flex;
     width: 100%;
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
     background-color: #ffffff;
-    -webkit-box-shadow: 0 1px 1px 1px #d6d6d6;
-    box-shadow: 0 1px 1px 1px #d6d6d6;
-}
-
-.about-page .main-about p {
-    font-style: italic;
-    font-size: 2rem;
-}
-
-.about-page .main-about h3 {
-    align-content: center;
-    padding: 50px;
-}
-
-footer {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-}
-
-footer h6 {
-    margin: 20px 5px;
-}
-
-footer .wsite-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .wsite-social a {
-    margin: 10px;
-    font-size: 1.6rem;
-    color: #000000;
+    -webkit-box-shadow: 0 1px 1px 1px #D6D6D6;
+    box-shadow: 0 1px 1px 1px #D6D6D6;
 }
 
 @font-face {
@@ -337,7 +494,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #fafafa;
     font-family: "PT Sans", sans-serif;
 }
 

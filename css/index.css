@@ -166,6 +166,12 @@ body {
   background-color: #fff;
   font-family: "PT Sans", sans-serif;
 }
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -209,6 +215,21 @@ body {
 }
 .main-content {
   display: flex;
+<<<<<<< HEAD
+=======
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+.main-content h1 {
+  font-size: 40px;
+}
+.main-content h4 {
+  font-size: 30px;
+}
+.main-content .first-step {
+  border: 3px solid blue;
+>>>>>>> 97fe45f339a6421947246fd4bc063f04bfc3800f
 }
 .main-content .top-content {
   display: flex;
@@ -218,6 +239,7 @@ footer {
   width: 100%;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   padding: 2rem;
 }
 @media (max-width: 700px) {
@@ -238,6 +260,8 @@ footer {
   footer #email {
     width: 100%;
   }
+=======
+>>>>>>> 97fe45f339a6421947246fd4bc063f04bfc3800f
 }
 footer p {
   text-align: center;
@@ -246,6 +270,7 @@ footer h6 {
   margin: 4px;
   text-align: center;
 }
+<<<<<<< HEAD
 @media (max-width: 700px) {
   footer h6 {
     flex-direction: column;
@@ -265,6 +290,8 @@ footer h6 {
     width: 100%;
   }
 }
+=======
+>>>>>>> 97fe45f339a6421947246fd4bc063f04bfc3800f
 footer .wsite-social {
   display: flex;
   margin: 15px;
@@ -272,6 +299,7 @@ footer .wsite-social {
   align-self: center;
   align-items: center;
 }
+<<<<<<< HEAD
 @media (max-width: 700px) {
   footer .wsite-social {
     justify-content: center;
@@ -285,6 +313,8 @@ footer .wsite-social {
     flex-direction: column;
   }
 }
+=======
+>>>>>>> 97fe45f339a6421947246fd4bc063f04bfc3800f
 footer .wsite-social a {
   padding: 10px;
   font-size: 1.6rem;
