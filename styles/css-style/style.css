@@ -270,7 +270,6 @@ header img {
 }
 .intro {
   display: flex;
-  align-items: center;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -294,6 +293,7 @@ header img {
 .intro iframe {
   width: 400px;
   height: 315px;
+  margin: 0 auto;
 }
 .intro .top-container {
   width: 100%;
@@ -301,11 +301,13 @@ header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .intro .top-container .intro-text {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
   align-items: center;
   max-width: 400px;
   padding-bottom: 30px;
@@ -529,4 +531,6 @@ footer .social i {
 
 .btn {
   opacity: 1;
+  vertical-align: middle;
+  margin: 0 auto;
 }
