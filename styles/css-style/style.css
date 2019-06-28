@@ -282,6 +282,16 @@ header img {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/ghana.png");
 }
 @media (max-width: 800px) {
+
+.nav-style nav a {
+  margin: 0 auto;
+  display: flex;
+  padding-top: 10px;
+}
+
+.logo {
+  display:none;
+}
   .intro {
     flex-direction: column;
   }
@@ -531,6 +541,4 @@ footer .social i {
 
 .btn {
   opacity: 1;
-  vertical-align: middle;
-  margin: 0 auto;
 }
