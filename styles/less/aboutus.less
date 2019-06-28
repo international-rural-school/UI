@@ -8,7 +8,8 @@
         background-attachment: fixed;
         background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('../../assets/Tech_Classroom.jpg');
+            rgba(0, 0, 0, 0.5)),
+            url("../../assets/TechClassroom.jpg");
         display: flex;
         justify-content: center;
         align-items: center;
@@ -28,19 +29,32 @@
                 font-weight: bold;
             }
         }
+
+        @media @tablet {
+            width: 100%;
+        }
+
+        @media @phone {}
     }
 
     .main-about {
+        display: flex;
         width: 100%;
         max-width: 1000px;
         margin: 50px auto;
         padding: 20px;
         background-color: #ffffff;
-        -webkit-box-shadow: 0 1px 1px 1px #D6D6D6;
-        box-shadow: 0 1px 1px 1px #D6D6D6;
+        -webkit-box-shadow: 0 1px 1px 1px #d6d6d6;
+        box-shadow: 0 1px 1px 1px #d6d6d6;
 
+        p {
+            font-style: italic;
+            font-size: 2rem;
+        }
+
+        h3 {
+            align-content: center;
+            padding: 50px;
+        }
     }
-
-
-
 }
